@@ -1,2 +1,2 @@
 # Websites--Practice
-a couple of websites here i created just to practice, some are for in class assingments: made by HTML,CSS, basic JS
+a websites i created just to practice, and used for in class assingments: made by HTML,CSS, basic JS
