@@ -1,0 +1,400 @@
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption,
+section, article, aside/* "*" for every element*/
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body
+{
+	background-color: #000;
+}
+img 
+{
+	max-width: 100%;
+	display: block; /*why?*/
+}
+*{box-sizing: border-box;}
+/*mobile viewport*/
+header
+{
+	/*border: 2px solid red;*/
+	/*width: 25%;
+	float: left;*/
+	height: 190px;
+	/*position: sticky;*/
+	top: 0;
+	background-color: black;
+}
+header img
+{
+	margin: 0 auto;
+}
+nav
+{
+	/*border: 5px solid green;*/
+	/*width: 70%;
+	float: right;
+	margin: 5em 3em 0 0;*/
+	padding: 1%;
+	margin-bottom: 1%;
+}
+main
+{
+	/*clear: left;*/
+	background-color: white;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab' , serif;
+}
+nav ul
+{
+	list-style-type: none;
+	/*margin: 0;
+	text-align: right;*/
+	text-align: center;
+}
+nav li
+{
+	/*display: inline-block;*/
+	font-size: 1.5em;
+	font-family: 'Francois One' , sans-serif;
+	/*font-weight: bold;*/
+	/*border: 1px solid red;*/
+	border-top: 1px solid #FFF;
+}
+nav li:first-child
+{
+	border-top: none;
+}
+
+nav li a 
+{
+	color: white;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	display: block; /*inline-block better*/
+}
+footer p 
+{
+	font-size: 0.75em;
+	text-align: center;
+	color: #FFF;
+	padding: 0 1em;
+}
+footer p a 
+{
+	color: white;
+	text-decoration: none;
+}
+#weights, #cardio, #training
+{
+	/*width: 29%;*/
+	/*float: left;*/
+	margin: 0 2%;
+}
+/*#exercises
+{
+	clear: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #F2F2F2;
+	padding: 1% 2%;
+}
+#exercises dt
+{
+	font-weight: bold;
+}
+#exercises dd
+{
+	padding: 0.5% 1% 2% 0;
+}*/
+#contact
+{
+	text-align: center;
+}
+#contact .contact-email-link
+{
+	color: #666600;
+	text-decoration: none;
+}
+#contact .contact-email-link
+{
+	color: #666600; /*#FFF*/
+	text-decoration: none;
+}
+.action
+{
+	font-size: 1.35em;
+	color: #666600;
+	font-weight: bold;
+	text-shadow: 5px 5px 8px #CCC;
+}
+.external-link
+{
+	color: #666600;
+	font-weight: bold;
+	text-decoration: none;
+}
+.map
+{
+	border: 2px solid #000;
+	width: 95%; /*why not use max-width: 100%*/;
+	height: 50%;
+}
+.tablet-desktop
+{
+	display: none;
+}
+.mobile
+{
+	display: block;/*has no effect!!*/
+}
+.tel-link
+{
+	background-color: #404040;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2%;
+	border-radius: 5px;
+}
+.tel-link a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+.hours
+{
+	margin-left: 10%;
+}
+.round
+{
+	border-radius: 8px;
+}
+.frame
+{
+	position: relative;
+	max-width: 450px;
+	margin: 2% auto;
+}
+.pic-text
+{
+	position: absolute;
+	bottom: 0;
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.mobile h3
+{
+	text-shadow: 5px 5px 8px #CCC;
+}
+article
+{
+	padding: 2%;
+}
+article h3 {text-align: center;}
+article img {margin: 0 auto;}
+article ul{margin-left: 10%;}
+article:nth-of-type(2)
+{
+	background-color: rgba(204, 204, 204, 0.3);
+}
+/*tablet styles*/
+@media screen and (min-width: 630px), print
+{
+	.mobile
+	{
+		display:none;
+	}
+	.tablet-desktop
+	{
+		display: block;
+	}
+	header
+	{
+		/*position: static;*/
+		padding-bottom: 2%;
+	}
+	nav li
+	{
+		display: inline-block;
+		border-top: none;
+		border-right: 1px solid white;
+	}
+	nav li:last-child
+	{
+		border-right:none;
+	}
+	nav li a
+	{
+		padding: 0.1em 0.75em;
+	}
+	main ul
+	{
+		margin: 0 0 4% 10%;
+	}
+	#exercises
+	{
+		/*clear: left;*/
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		background-color: #F2F2F2;
+		padding: 1% 2%;
+		background: linear-gradient(to right, #CCC, #FFF);
+	}
+	#exercises dt
+	{
+		font-weight: bold;
+	}
+	#exercises dd
+	{
+		padding: 0.5% 1% 2% 0;
+	}
+	.tel-num
+	{
+		font-size: 1.25em;
+	}
+	.map
+	{
+		width: 600px; /*not good,percentage is better*/
+		height: 450px;
+	}
+	.grid
+	{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	.pic-text
+	{
+		font-size: 1em;
+		padding: 10px;
+	}
+	.grid-item4
+	{
+		grid-column: 1 / span 3;
+	}
+	aside
+	{
+		text-align: center;
+		font-size: 1.25em;
+		font-style: italic;
+		font-weight: bold;
+		padding: 2%;
+		background-color: rgba(204, 204, 204, 0.5);
+		box-shadow: 5px 5px 8px #000;
+		text-shadow: 5px 5px 5px #b3b3b3;
+		border-radius: 0 15px;
+	}
+	table
+	{
+		width: 100%;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	td,th
+	{
+		border: 1px solid black;
+		padding: 2%;
+	}
+}
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print
+ {
+    
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+    
+    /* Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+    
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover
+    {
+    	color: #000;
+    	background-color: #FFF;
+    }
+    
+    /* Desktop Viewport: Style Rules for main content */
+    main {
+        clear: left;
+    }
+    
+    main h1 {
+        font-size: 1.8em;
+    }
+    
+    #weights, #cardio, #training {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exercises {
+        clear: left;
+    }
+
+    .pic-text
+	{
+		font-size: 1.5em;
+		padding: 20px;
+	}
+	.frame
+	{
+		opacity: 0.9;
+	}
+	.frame:hover
+	{
+		opacity: 1;
+		box-shadow: 8px 8px 10px #808080;
+	}
+	article h3
+	{
+		font-size: 1.75em;
+	}
+}
+/*Large Desktops*/
+@media screen and (min-width: 1921px) 
+{
+	#container
+	{
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
+@media print
+{
+	body
+	{
+		background-color: white;
+		color: black;
+	}
+}
